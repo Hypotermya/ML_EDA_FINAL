@@ -22,13 +22,13 @@ arrival_time: Categoría derivada que agrupa la hora de llegada en intervalos o 
 
 destination_city: Ciudad de destino donde aterriza el vuelo. Se registran 6 ciudades únicas.
 
-class: Clase del asiento reservada; puede ser Business o Economy.
+class: Clase del asiento reservada; puede ser Business o Economy. (variable objetivo del análisis)
 
 duration: Tiempo total de viaje entre ciudades, expresado en horas (variable continua).
 
 days_left: Número de días entre la fecha de reserva y la fecha del vuelo, calculado como la diferencia entre ambas fechas.
 
-price: Precio del pasaje (variable objetivo del análisis).
+price: Precio del pasaje.
 
 Este conjunto de datos permite realizar un análisis exploratorio enfocado en entender cómo varían los precios de los vuelos en función de características como la aerolínea, la antelación con que se reserva, la duración del vuelo, las escalas y otros factores clave. El objetivo será extraer patrones relevantes y potencialmente útiles para modelos predictivos o para apoyar decisiones informadas sobre reservas aéreas.
 
