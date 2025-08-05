@@ -1,34 +1,46 @@
-# Introduccion al conjunto de datos
+# Introduccion a los datos
 
-El presente análisis se basa en un conjunto de datos de reservas de vuelos de varias aerolíneas, extraído de la plataforma Kaggle. Según la descripción proporcionada, los datos fueron recolectados mediante técnicas de web scraping desde una página web reconocida del sector, y luego organizados en un formato estructurado y ordenado cronológicamente.
+El presente análisis se basa en un conjunto de datos tomado de la plataforma Kaggle, el cual contiene información detallada relacionada con factores de riesgo del cáncer de tiroides. En total, el dataset incluye 212,691 registros, que abarcan datos demográficos, antecedentes clínicos, estilo de vida y niveles hormonales clave, con el objetivo de evaluar la probabilidad de desarrollar esta enfermedad.
 
-El conjunto de datos contiene registros detallados de vuelos entre distintas ciudades de la India. Incluye información sobre la aerolínea, horarios, duración del vuelo, escalas, clase del asiento y precios, entre otros aspectos relevantes para el análisis del comportamiento de los vuelos y la variación de precios.
+Este conjunto de datos es ideal para aplicar técnicas de machine learning orientadas a la predicción del riesgo de cáncer de tiroides, así como para explorar relaciones significativas entre diversos factores y la aparición de esta condición médica.
 
-En total, el conjunto cuenta con 300,153 registros distribuidos en 12 campos. A continuación se describen brevemente cada uno de ellos:
+Descripción de las Variables
+El dataset se compone de 17 columnas, que se describen a continuación:
 
-index: Identificador único de cada vuelo (clave primaria).
+1. Patient_ID (int): Identificador único de cada paciente.
 
-airline: Nombre de la aerolínea que opera el vuelo.
+2. Age (int): Edad del paciente.
 
-flight: Código identificador del avión.
+3. Gender (categórica): Género del paciente (Masculino/Femenino).
 
-source_city: Ciudad de origen desde donde parte el vuelo.
+4. Country (categórica): País de residencia.
 
-departure_time: Categoría derivada que agrupa la hora de salida en intervalos o franjas horarias. Tiene 6 valores distintos.
+5. Ethnicity (categórica): Origen étnico del paciente.
 
-stops: Número de escalas entre la ciudad de origen y el destino. Es una variable categórica con 3 valores posibles.
+6. Family_History (categórica): Antecedentes familiares de cáncer de tiroides (Sí/No).
 
-arrival_time: Categoría derivada que agrupa la hora de llegada en intervalos o franjas horarias. También tiene 6 valores distintos.
+7. Radiation_Exposure (categórica): Historia de exposición a radiación (Sí/No).
 
-destination_city: Ciudad de destino donde aterriza el vuelo. Se registran 6 ciudades únicas.
+8. Iodine_Deficiency (categórica): Presencia de deficiencia de yodo (Sí/No).
 
-class: Clase del asiento reservada; puede ser Business o Economy. (variable objetivo del análisis)
+9. Smoking (categórica): Hábito de fumar (Sí/No).
 
-duration: Tiempo total de viaje entre ciudades, expresado en horas (variable continua).
+10. Obesity (categórica): Condición de obesidad (Sí/No).
 
-days_left: Número de días entre la fecha de reserva y la fecha del vuelo, calculado como la diferencia entre ambas fechas.
+11. Diabetes (categórica): Presencia de diabetes (Sí/No).
 
-price: Precio del pasaje.
+12. TSH_Level (float): Nivel de hormona estimulante de la tiroides (TSH) en µIU/mL.
 
-Este conjunto de datos permite realizar un análisis exploratorio enfocado en entender cómo varían los precios de los vuelos en función de características como la aerolínea, la antelación con que se reserva, la duración del vuelo, las escalas y otros factores clave. El objetivo será extraer patrones relevantes y potencialmente útiles para modelos predictivos o para apoyar decisiones informadas sobre reservas aéreas.
+13. T3_Level (float): Nivel de triyodotironina (T3) en ng/dL.
 
+14. T4_Level (float): Nivel de tiroxina (T4) en µg/dL.
+
+15. Nodule_Size (float): Tamaño de los nódulos tiroideos en cm.
+
+16. Thyroid_Cancer_Risk (categórica): Riesgo estimado de cáncer de tiroides (Bajo/Medio/Alto).
+
+17. Diagnosis (categórica): Diagnóstico final (Benigno/Maligno).
+
+Este conjunto de datos permite realizar un análisis exploratorio enfocado en entender cómo varía el riesgo de cáncer de tiroides en función de diversas características como la edad, el género, los antecedentes familiares, la exposición a radiación, la presencia de deficiencia de yodo, y los niveles hormonales clave (TSH, T3 y T4), entre otros factores clínicos y de estilo de vida.
+
+El objetivo de este análisis es identificar patrones relevantes que puedan ser útiles para el desarrollo de modelos predictivos de riesgo, así como para apoyar decisiones informadas en el ámbito clínico y de salud pública, mediante la detección temprana de perfiles de riesgo y posibles asociaciones significativas entre los distintos factores involucrados.
