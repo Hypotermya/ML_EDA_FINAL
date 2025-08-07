@@ -1,6 +1,6 @@
 # Introduccion a los datos
 
-El presente análisis se basa en un conjunto de datos tomado de la plataforma Kaggle, el cual contiene información detallada relacionada con factores de riesgo del cáncer de tiroides. En total, el dataset incluye 212,691 registros, que abarcan datos demográficos, antecedentes clínicos, estilo de vida y niveles hormonales clave, con el objetivo de evaluar la probabilidad de desarrollar esta enfermedad.
+El presente análisis se basa en un conjunto de datos tomado de la plataforma Kaggle([Fuente de los datos](https://www.kaggle.com/datasets/mzohaibzeeshan/thyroid-cancer-risk-dataset/data)), el cual contiene información detallada relacionada con factores de riesgo del cáncer de tiroides. En total, el dataset incluye 212,691 registros, que abarcan datos demográficos, antecedentes clínicos, estilo de vida y niveles hormonales clave, con el objetivo de evaluar la probabilidad de desarrollar esta enfermedad.
 
 Este conjunto de datos es ideal para aplicar técnicas de machine learning orientadas a la predicción del riesgo de cáncer de tiroides, así como para explorar relaciones significativas entre diversos factores y la aparición de esta condición médica.
 
